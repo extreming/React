@@ -1,0 +1,64 @@
+.xiaojiejie {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.input {
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.btn {
+    width: 80px;
+    height: 34px;
+    margin-left: 10px;
+    background: #e63c08;
+    border: 1px solid #e63c08;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    position: relative;
+}
+.btn:active {
+    top: -1px;
+}
+.list {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+.show { animation: show-item 2s ease-in forwards; }
+.hide { animation: hide-item 2s ease-in forwards; }
+
+@keyframes hide-item {
+    0% {
+        opacity: 1;
+        color: yellow;
+    }
+    50% {
+        opacity: .5;
+        color: green;
+    }
+    100% {
+        opacity: 0;
+        color: red;
+    }
+}
+
+@keyframes show-item {
+    0% {
+        opacity: 0;
+        color: yellow;
+    }
+    50% {
+        opacity: .5;
+        color: green;
+    }
+    100% {
+        opacity: 1;
+        color: red;
+    }
+}
